@@ -432,6 +432,51 @@
       padding: clamp(32px, 5vw, 58px) clamp(18px, 5vw, 76px);
     }
 
+    .author {
+      padding: 28px clamp(18px, 5vw, 76px);
+      background: #f8fbff;
+      border-top: 1px solid var(--line);
+    }
+
+    .author-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: center;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 12px 28px rgba(16, 38, 79, .08);
+    }
+
+    .author h2 {
+      margin: 0 0 6px;
+      font-size: 1.35rem;
+    }
+
+    .author p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 10px 13px;
+      border-radius: 8px;
+      color: white;
+      background: var(--navy);
+      font-weight: 900;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
     .closing h2 {
       color: white;
     }
@@ -445,6 +490,7 @@
     @media (max-width: 1020px) {
       .hero,
       .split,
+      .author-card,
       .closing {
         grid-template-columns: 1fr;
       }
@@ -690,5 +736,15 @@
     </div>
     <a class="btn" href="#access">Start in Jobs4TN</a>
   </footer>
+
+  <section class="author" aria-label="Author contact information">
+    <div class="author-card">
+      <div>
+        <h2>Created by Mario McMichael</h2>
+        <p>Clarksville, Tennessee | Author and resource creator for Jobs4TN Big Interview awareness.</p>
+      </div>
+      <a class="contact-link" href="mailto:mariomcmichael@icloud.com">mariomcmichael@icloud.com</a>
+    </div>
+  </section>
 </body>
 </html>
